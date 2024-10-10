@@ -1,0 +1,128 @@
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   background: url(Background.jpg);
+}
+
+.player-hand, .opponent-hand {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.card {
+   background-color: whitesmoke;
+   border: 1px solid black;
+   width: 120px;
+   height: 160px;
+   line-height: 160px;
+   text-align: center;
+   font-size: 80px;
+   border-radius: 5px;
+   box-shadow: black 3px 3px;
+   margin: 0 5px; /* Space between cards */
+}
+
+.player-hand {
+   position: relative;
+   bottom: 10px; /* Move player hand up */
+}
+
+.opponent-hand {
+   position: relative;
+   top: 10px; /* Move opponent hand down */
+}
+
+.card-red {
+   color: red;
+}
+
+.card-black {
+   color: black;
+}
+
+.heart {
+   color: red;
+   font-size: 28px; 
+   width: 30px;
+   height: 30px;  
+   line-height: 30px;
+}
+
+.spade {
+   color: black;
+   font-size: 36px; 
+   width: 30px;
+   height: 30px;  
+   line-height: 30px;
+
+}
+
+.club {
+  color: black;
+   font-size: 36px; 
+   width: 30px;
+   height: 30px;  
+   line-height: 30px;
+}
+
+.diamond {
+  color: red;
+   font-size: 28px; 
+   width: 30px;
+   height: 30px;  
+   line-height: 30px;
+}
+
+.top-left {
+left: 2px;
+top: 2px;
+position: absolute;
+}
+
+.bottom-right {
+   right: 2px;
+   bottom: 2px;
+   position: absolute;
+}
+
+.card-2ofspades {
+   background: url(2ofspades.png);
+   background-size: cover;
+   background-position: flex;
+}
+
+.card-7ofclubs {
+   background: url(7ofclubs.png);
+   background-size: cover;
+   background-position: flex;
+}
+
+.card-9ofdiamonds {
+   background: url(9ofdiamonds.png);
+   background-size: cover;
+   background-position: flex;
+}
+
+.card-8ofhearts {
+   background: url(8ofhearts.png);
+   background-size: cover;
+   background-position: flex;
+}
+
+.card-2ofhearts {
+   background: url(2ofhearts.png);
+   background-size: cover;
+   background-position: flex;
+}
+
+.card-background {
+   background: url(cardback.jpg);
+   background-size: cover;
+   background-position: flex;   
+}
