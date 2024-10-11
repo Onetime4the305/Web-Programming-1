@@ -164,3 +164,27 @@ position: absolute;
    animation-delay: 3s;
    transition: transform 3s ease; /* Smooth transition */
 }
+
+.description-box {
+   position: absolute;
+   top: 50%;
+   right: 20px; /* Adjust spacing from the right */
+   transform: translateY(-50%); /* Center vertically */
+   background-color: #E1D697;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 15px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   width: 250px; /* Adjust width as needed */
+   z-index: 10; /* Ensure it appears above other elements */
+}
+
+.description-box h2 {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.description-box p {
+   font-size: 14px;
+   line-height: 1.5;
+}
