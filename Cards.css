@@ -149,3 +149,18 @@ position: absolute;
    background-size: cover;
    background-position: flex;
 }
+
+@keyframes moveCard {
+   from {
+       transform: translate(0, 0) rotate(0deg);
+   }
+   to {
+       transform: translate(250px, -270px) rotate(20deg); /* Adjust values based on your layout */
+   }
+}
+
+.animate-card {
+   animation: moveCard 2s forwards; /* Adjust duration as needed */
+   animation-delay: 3s;
+   transition: transform 3s ease; /* Smooth transition */
+}
