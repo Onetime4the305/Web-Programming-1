@@ -126,3 +126,26 @@ position: absolute;
    background-size: cover;
    background-position: flex;   
 }
+
+.deck {
+   position: absolute;
+   top: 285px;
+   margin-right: 750px;
+}
+
+.deck2 {
+   position: relative center;
+   top: 500px;
+}
+
+.cardstack {
+   background: url(cardstack.jpg);
+   background-size: cover;
+   background-position: flex;
+}
+
+.card-5ofspades {
+   background: url(5ofspades.png);
+   background-size: cover;
+   background-position: flex;
+}
