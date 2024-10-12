@@ -1,0 +1,267 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(Background.jpg);
+ }
+
+ .card {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    width: 120px;
+    height: 160px;
+    line-height: 160px;
+    text-align: center;
+    font-size: 80px;
+    border-radius: 5px;
+    box-shadow: black 3px 3px;
+    margin: 0 5px; /* Space between cards */
+ }
+
+.deck {
+    position: absolute;
+    top: 330px;
+    left: 320px;
+ }
+
+ .deckfirst {
+    z-index: 10;
+ }
+
+ .decksecond {
+    z-index: 1;
+ }
+
+ .cardstack {
+    background: url(cardstack.jpg);
+    background-size: cover;
+    background-position: flex;
+ }
+ .card-2ofspades {
+    background: url(2ofspades.png);
+    background-size: cover;
+    background-position: flex;
+ }
+ 
+ .card-7ofclubs {
+    background: url(7ofclubs.png);
+    background-size: cover;
+    background-position: flex;
+ }
+ 
+ .card-9ofdiamonds {
+    background: url(9ofdiamonds.png);
+    background-size: cover;
+    background-position: flex;
+ }
+ 
+ .card-8ofhearts {
+    background: url(8ofhearts.png);
+    background-size: cover;
+    background-position: flex;
+ }
+ 
+ .card-2ofhearts {
+    background: url(2ofhearts.png);
+    background-size: cover;
+    background-position: flex;
+ }
+ 
+ .card-5ofspades {
+    background: url(5ofspades.png);
+    background-size: cover;
+    background-position: flex;
+ }
+
+ .card-background {
+    background: url(cardback.jpg);
+    background-size: cover;
+    background-position: flex;   
+ }
+
+ .description-box {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #E1D697;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 250px; 
+    z-index: 10; 
+ }
+ 
+ .description-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: red;
+ }
+ 
+ .description-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color:red;
+ }
+
+ @keyframes moveCard {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(200px, 230px); 
+    }
+ }
+ 
+ .animate-first {
+    animation: moveCard 2s forwards; 
+    animation-delay: 2s;
+    transition: transform 3s ease; 
+ }
+
+ @keyframes moveCard2 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(200px, -310px); 
+    }
+ }
+
+ .animate-second {
+    animation: moveCard2 2s forwards; 
+    animation-delay: 3s;
+    transition: transform 3s ease; 
+ }
+
+ @keyframes moveCard3 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(340px, 230px); 
+    }
+ }
+ 
+ .animate-third {
+    animation: moveCard3 2s forwards; 
+    animation-delay: 4s;
+    transition: transform 3s ease; 
+ }
+
+ @keyframes moveCard4 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(340px, -310px); 
+    }
+ }
+ 
+ .animate-fourth {
+    animation: moveCard4 2s forwards; 
+    animation-delay: 5s;
+    transition: transform 3s ease; 
+
+ }
+ 
+ @keyframes moveCard5 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(480px, 230px); 
+    }
+ }
+ 
+ .animate-fifth {
+    animation: moveCard5 2s forwards; 
+    animation-delay: 6s;
+    transition: transform 3s ease; 
+
+ }
+ 
+ @keyframes moveCard6 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(480px, -310px); 
+    }
+ }
+ 
+ .animate-sixth {
+    animation: moveCard6 2s forwards; 
+    animation-delay: 7s;
+    transition: transform 3s ease; 
+ }@keyframes moveCard7 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(620px, 230px); 
+    }
+ }
+ 
+ .animate-seventh {
+    animation: moveCard7 2s forwards; 
+    animation-delay: 8s;
+    transition: transform 3s ease; 
+ }@keyframes moveCard8 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(620px, -310px); 
+    }
+ }
+ 
+ .animate-eighth {
+    animation: moveCard8 2s forwards; 
+    animation-delay: 9s;
+    transition: transform 3s ease; 
+ }@keyframes moveCard9 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(760px, 230px); 
+    }
+ }
+ 
+ .animate-ninth {
+    animation: moveCard9 2s forwards; 
+    animation-delay: 10s;
+    transition: transform 3s ease; 
+ }@keyframes moveCard10 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(760px, -310px); 
+    }
+ }
+ 
+ .animate-tenth {
+    animation: moveCard10 2s forwards; 
+    animation-delay: 11s;
+    transition: transform 3s ease; 
+ }@keyframes moveCard11 {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(480px, -30px); 
+    }
+ }
+ 
+ .animate-last {
+    animation: moveCard11 2s forwards; 
+    animation-delay: 12s;
+    transition: transform 3s ease; 
+ }
+
