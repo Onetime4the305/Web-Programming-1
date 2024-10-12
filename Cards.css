@@ -38,59 +38,6 @@ body {
    top: 10px; /* Move opponent hand down */
 }
 
-.card-red {
-   color: red;
-}
-
-.card-black {
-   color: black;
-}
-
-.heart {
-   color: red;
-   font-size: 28px; 
-   width: 30px;
-   height: 30px;  
-   line-height: 30px;
-}
-
-.spade {
-   color: black;
-   font-size: 36px; 
-   width: 30px;
-   height: 30px;  
-   line-height: 30px;
-
-}
-
-.club {
-  color: black;
-   font-size: 36px; 
-   width: 30px;
-   height: 30px;  
-   line-height: 30px;
-}
-
-.diamond {
-  color: red;
-   font-size: 28px; 
-   width: 30px;
-   height: 30px;  
-   line-height: 30px;
-}
-
-.top-left {
-left: 2px;
-top: 2px;
-position: absolute;
-}
-
-.bottom-right {
-   right: 2px;
-   bottom: 2px;
-   position: absolute;
-}
-
 .card-2ofspades {
    background: url(2ofspades.png);
    background-size: cover;
@@ -182,9 +129,11 @@ position: absolute;
 .description-box h2 {
    font-size: 20px;
    margin-bottom: 10px;
+   color: red
 }
 
 .description-box p {
    font-size: 14px;
    line-height: 1.5;
+   color:red;
 }
