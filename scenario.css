@@ -1,138 +1,160 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: url(Background.jpg);
- }
- 
- .player-hand, .opponent-hand {
-    display: flex;
-    justify-content: center;
-    width: 100%;
- }
- 
- .card {
-    background-color: whitesmoke;
-    border: 1px solid black;
-    width: 120px;
-    height: 160px;
-    line-height: 160px;
-    text-align: center;
-    font-size: 80px;
-    border-radius: 5px;
-    box-shadow: black 3px 3px;
-    margin: 0 5px; /* Space between cards */
- }
- 
- .player-hand {
-    position: relative;
-    bottom: 10px; /* Move player hand up */
- }
- 
- .opponent-hand {
-    position: relative;
-    top: 10px; /* Move opponent hand down */
- }
- .card-Jofspades {
-   background: url(Jofspades.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   background: url(Background.jpg);
+}
+
+.player-hand, .opponent-hand {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.card {
+   background-color: whitesmoke;
+   border: 1px solid black;
+   width: 120px;
+   height: 160px;
+   line-height: 160px;
+   text-align: center;
+   font-size: 80px;
+   border-radius: 5px;
+   box-shadow: black 3px 3px;
+   margin: 0 5px; /* Space between cards */
+}
+
+.player-hand {
+   position: relative;
+   bottom: 10px; /* Move player hand up */
+}
+
+.opponent-hand {
+   position: relative;
+   top: 10px; /* Move opponent hand down */
+}
+.card-Jofspades {
+  background: url(Jofspades.png);
+  background-size: cover;
+  background-position: flex;
+}
+
+
+.card-7ofclubs {
+   background: url(7ofclubs.png);
    background-size: cover;
    background-position: flex;
 }
 
- 
- .card-7ofclubs {
-    background: url(7ofclubs.png);
-    background-size: cover;
-    background-position: flex;
- }
- 
- .card-Aofspades {
-    background: url(Aofspades.png);
-    background-size: cover;
-    background-position: flex;
- }
- 
- .card-8ofhearts {
-   background: url(8ofhearts.png);
+.card-Aofspades {
+   background: url(Aofspades.png);
    background-size: cover;
    background-position: flex;
 }
- 
- .card-2ofhearts {
-    background: url(2ofhearts.png);
-    background-size: cover;
-    background-position: flex;
- }
- 
- .card-background {
-    background: url(cardback.jpg);
-    background-size: cover;
-    background-position: flex;   
- }
- 
- .deck {
-    position: absolute;
-    top: 285px;
-    margin-right: 750px;
- }
- 
- .deck2 {
-    position: relative center;
-    top: 500px;
- }
- 
- .cardstack {
-    background: url(cardstack.jpg);
-    background-size: cover;
-    background-position: flex;
- }
- 
- .card-5ofspades {
-    background: url(Qofdiamond.png);
-    background-size: cover;
-    background-position: flex;
- }
- 
- @keyframes moveCard {
-    from {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    to {
-        transform: translate(250px, -270px) rotate(20deg); /* Adjust values based on your layout */
-    }
- }
- 
- .animate-card {
-    animation: moveCard 2s forwards; /* Adjust duration as needed */
-    animation-delay: 3s;
-    transition: transform 3s ease; /* Smooth transition */
- }
- 
- .description-box {
-    position: absolute;
-    top: 50%;
-    right: 20px; /* Adjust spacing from the right */
-    transform: translateY(-50%); /* Center vertically */
-    background-color: #E1D697;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    width: 250px; /* Adjust width as needed */
-    z-index: 10; /* Ensure it appears above other elements */
- }
- 
- .description-box h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: red
- }
- 
- .description-box p {
-    font-size: 14px;
-    line-height: 1.5;
-    color:red;
- }
+
+.card-8ofhearts {
+  background: url(8ofhearts.png);
+  background-size: cover;
+  background-position: flex;
+}
+
+.card-2ofhearts {
+   background: url(2ofhearts.png);
+   background-size: cover;
+   background-position: flex;
+}
+.card-Kofdiamond {
+   background: url(Kofdiamond.png);
+   background-size: cover;
+   background-position: flex;
+   position: relative;  /* Ensure relative positioning */
+   top: 120px; 
+   
+}
+
+.card-background {
+   background: url(cardback.jpg);
+   background-size: cover;
+   background-position: flex;   
+}
+
+.deck {
+   position: absolute;
+   top: 285px;
+   margin-right: 750px;
+}
+
+.deck2 {
+   position: relative center;
+   top: 500px;
+}
+
+.cardstack {
+   background: url(cardstack.jpg);
+   background-size: cover;
+   background-position: flex;
+}
+
+.card-5ofspades {
+   background: url(Qofdiamond.png);
+   background-size: cover;
+   background-position: flex;
+}
+
+@keyframes moveCard {
+   from {
+       transform: translate(0, 0) rotate(0deg);
+   }
+   to {
+       transform: translate(250px, -270px) rotate(20deg); /* Adjust values based on your layout */
+   }
+}
+
+.animate-card {
+   animation: moveCard 2s forwards; /* Adjust duration as needed */
+   animation-delay: 3s;
+   transition: transform 3s ease; /* Smooth transition */
+}
+
+.description-box {
+   position: absolute;
+   top: 50%;
+   right: 20px; /* Adjust spacing from the right */
+   transform: translateY(-50%); /* Center vertically */
+   background-color: #E1D697;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 15px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   width: 250px; /* Adjust width as needed */
+   z-index: 10; /* Ensure it appears above other elements */
+}
+
+.description-box h2 {
+   font-size: 20px;
+   margin-bottom: 10px;
+   color: red
+}
+
+.description-box p {
+   font-size: 14px;
+   line-height: 1.5;
+   color:red;
+}
+@keyframes moveCardToPlayer {
+   from {
+       transform: translate(0, 0) rotate(0deg);
+   }
+   to {
+       transform: translate(250px, 150px) rotate(0deg); /* Adjust values based on layout */
+   }
+}
+
+.animate-opponent-card {
+   animation: moveCardToPlayer 2s forwards; /* Adjust duration as needed */
+   transition: transform 2s ease-in-out; /* Smooth transition */
+}
+
