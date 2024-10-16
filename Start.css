@@ -260,7 +260,7 @@ body {
         transform: translate(0, 0) rotate(0deg);
     }
     to {
-        transform: translate(480px, 100px); 
+        transform: translate(480px, -50px); 
     }
  }
  
