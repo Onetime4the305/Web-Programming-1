@@ -24,8 +24,12 @@ body {
 .deck {
     position: absolute;
     top: 330px;
-    left: 320px;
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 10;
  }
+
+
 
  .deckfirst {
     z-index: 10;
@@ -38,7 +42,8 @@ body {
  .cardstack {
     background: url(cardstack.jpg);
     background-size: cover;
-    background-position: flex;
+    background-position: center;
+    background-attachment: fixed;
  }
  .card-2ofspades {
     background: url(2ofspades.png);
@@ -255,7 +260,7 @@ body {
         transform: translate(0, 0) rotate(0deg);
     }
     to {
-        transform: translate(480px, -30px); 
+        transform: translate(480px, 100px); 
     }
  }
  
@@ -264,4 +269,7 @@ body {
     animation-delay: 12s;
     transition: transform 3s ease; 
  }
+
+
+
 
